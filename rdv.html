@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Page</title>
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      z-index: -1;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Articles & Services</a></li>
+          <li><a href="#">Rdv</a></li>
+          <li><a href="#">Inscription</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <main>
+      <form action="#">
+        <label for="nom">Nom *:</label>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+  
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+  
+        <label for="raison">Raison du rendez-vous *:</label>
+        <input type="text" id="raison" name="raison" required>
+  
+        <label for="heure">Heure de rendez-vous *:</label>
+        <input type="time" id="heure" name="heure" min="09:00" max="18:00" required>
+  
+        <label for="date">Date de rendez-vous *:</label>
+        <input type="date" id="date" name="date" min="2023-01-25" max="2023-03-25" value="2023-01-25" required>
+  
+        <input type="submit" value="Soumettre">
+      </form>
+    </main>
+  
+    <footer>
+      <p>Contactez-nous à <a href="mailto:info@example.com">info@example.com</a></p>
+      <p>Adresse: 123 Main Street, Anytown USA</p>
+    </footer>
+  </body>
+  
+</html>
